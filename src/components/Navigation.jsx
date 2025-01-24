@@ -23,7 +23,7 @@ const Navigation = () => {
                         <div className="shrink-0">
                             <img
                                 alt="SDG iLevel"
-                                src="/SDG-Logo.png"
+                                src="./SDG-Logo.png"
                                 className="size-14 rounded-md bg-green-100 p-1"
                             />
                         </div>
