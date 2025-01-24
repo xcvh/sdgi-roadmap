@@ -12,7 +12,7 @@ export default function App() {
             <main className="pb-8">
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                     <Routes>
-                        <Route path="/" element={<Article />} />
+                        <Route path="/sdgi-roadmap" element={<Article />} />
                         <Route path="/spain" element={<Spain />} />
                         <Route path="/croatia" element={<Croatia />} />
                         <Route path="/lithuania" element={<Lithuania />} />
