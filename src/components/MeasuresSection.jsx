@@ -6,7 +6,7 @@ const MeasuresSection = ({ measures }) => {
   return (
     <section className="mt-8">
       <h2 className="text-2xl font-bold mb-6">Department Measures</h2>
-      <div className="space-y-6">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {measures.map((measure, index) => (
           <Measure key={index} {...measure} />
         ))}

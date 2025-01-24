@@ -7,10 +7,10 @@ import Navigation from "./components/Navigation";
 
 export default function App() {
     return (
-        <div className="min-h-full">
+        <div className="min-h-full bg-neutral-100">
             <Navigation />
-            <main>
-                <div className="container">
+            <main className="pb-8">
+                <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                     <Routes>
                         <Route path="/" element={<Article />} />
                         <Route path="/spain" element={<Spain />} />

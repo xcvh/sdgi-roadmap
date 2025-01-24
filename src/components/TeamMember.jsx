@@ -3,23 +3,21 @@ import PropTypes from 'prop-types';
 
 const TeamMember = ({ name, title, position, area, areaLink, avatar }) => {
   return (
-    <div className="team-member p-4 border rounded-lg mb-4 shadow-sm flex items-start gap-4">
+    <div className="team-member p-4 flex items-start gap-4">
       {avatar && (
         <img 
           src={`./people/${avatar}`}
           alt={`${name}'s avatar`}
-          className="w-20 h-20 rounded-full object-cover"
+          className="size-20 rounded-full object-cover"
         />
       )}
       <div>
         <h3 className="text-xl font-semibold">{name}</h3>
-        <p className="text-gray-600">{title}</p>
-        <p className="text-gray-600">{position}</p>
-        <p className="mt-2">
-          Leads: {' '}
+        <p className="text-neutral-600">{title}</p>
+        <p className="">
           <a 
             href={areaLink}
-            className="text-blue-600 hover:underline"
+            className="text-green-600 hover:underline"
             target="_blank"
             rel="noopener noreferrer"
           >

@@ -107,7 +107,7 @@ const Spain = () => {
             "timeFrame": "June 2025 - March 2026"
           }
         ],
-    pdfLink: "/path/to/udg-roadmap.pdf"
+    pdfLink: "./pdfs/SDG-iLevel_WP6_ UdG Departmental Roadmap.pdf"
   };
 
   return <DepartmentLayout {...departmentData} />;

@@ -95,7 +95,7 @@ Timeframe for implementation: (12 months from 2025 03 01 to 2026 03 01)`,
         timeFrame: "2025 12 01 – 2026 03 01"
       }
     ],
-    pdfLink: "/path/to/lithuania-roadmap.pdf"
+    pdfLink: "./pdfs/SDG-iLevel_WP6_KTU Departamental Roadmap.pdf"
   };
 
   return <DepartmentLayout {...departmentData} />;

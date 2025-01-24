@@ -16,15 +16,15 @@ const Navigation = () => {
     const location = useLocation();
     
     return (
-        <nav className="bg-green-800 mb-8">
+        <nav className="sticky top-0 z-50 bg-green-900 mb-8">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="flex h-16 items-center justify-between">
                     <div className="flex items-center">
                         <div className="shrink-0">
                             <img
-                                alt="Your Company"
+                                alt="SDG iLevel"
                                 src="/SDG-Logo.png"
-                                className="size-14"
+                                className="size-14 rounded-md bg-green-100 p-1"
                             />
                         </div>
                         <div className="hidden md:block">
@@ -35,8 +35,8 @@ const Navigation = () => {
                                         to={item.href}
                                         className={classNames(
                                             location.pathname === item.href
-                                                ? "bg-neutral-900 text-white"
-                                                : "text-neutral-300 hover:bg-neutral-700 hover:text-white",
+                                                ? "bg-green-100 text-green-900"
+                                                : "text-green-100 hover:bg-green-100 hover:text-green-900",
                                             "rounded-md px-3 py-2 text-sm font-medium"
                                         )}
                                     >

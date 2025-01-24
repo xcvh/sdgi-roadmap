@@ -1,5 +1,6 @@
 import React from "react";
 import { MapPin } from "lucide-react";
+import { useNavigate } from "react-router";
 
 import {
     ComposableMap,
@@ -8,18 +9,26 @@ import {
     Annotation,
 } from "react-simple-maps";
 import { PatternLines } from "@vx/pattern";
-
+import { useEffect } from "react";
 const highlighted = ["LTU", "ESP", "HRV"];
 
+const countryRoutes = {
+    "ESP": "spain",
+    "LTU": "lithuania",
+    "HRV": "croatia"
+};
+
 const MapChart = () => {
+    const navigate = useNavigate();
+
     return (
-        <div className="border border-green-400 rounded-3xl">
+        <div className="border border-b-2 border-green-600 rounded-3xl overflow-hidden">
             <ComposableMap
                 projection="geoAzimuthalEqualArea"
                 projectionConfig={{
                     rotate: [-10.0, -52.0, 0],
-                    center: [-5, -3],
                     scale: 1100,
+                    center: [-5, -3]
                 }}
             >
                 <PatternLines
@@ -27,11 +36,11 @@ const MapChart = () => {
                     height={6}
                     width={6}
                     orientation={["diagonal"]}
-                    className="stroke-1 stroke-blue-800 bg-green-100"
+                    className="stroke-1 stroke-green-900 bg-green-100"
                 />
                 <Geographies
                     geography="/features.json"
-                    className="stroke-sky-500 stroke-[0.5px]"
+                    className="stroke-green-900 stroke-[0.5px]"
                 >
                     {({ geographies }) =>
                         geographies.map((geo) => {
@@ -44,41 +53,56 @@ const MapChart = () => {
                                     fill={
                                         isHighlighted
                                             ? "url('#lines')"
-                                            : "#fef3c7"
+                                            : "#dcfce7"
                                     }
-                                    onClick={() =>
-                                        console.log(geo.properties.name)
-                                    }
+                                    style={{
+                                        default: {
+                                            outline: "none"
+                                        },
+                                        hover: {
+                                            outline: "none",
+                                            fill: isHighlighted ? "#86efac" : "#dcfce7",
+                                            cursor: isHighlighted ? "pointer" : "default"
+                                        },
+                                        pressed: {
+                                            outline: "none"
+                                        }
+                                    }}
+                                    onClick={() => {
+                                        if (isHighlighted) {
+                                            navigate(`/${countryRoutes[geo.id]}`);
+                                        }
+                                    }}
                                 />
                             );
                         })
                     }
                 </Geographies>
                 <Annotation
-                    subject={[23.8813, 54.8985]} // Kaunas coordinates
+                    subject={[23.4052, 55.3985]} // Kaunas coordinates
                     dx={0}
                     dy={0}
                 >
                     {/* Map pin for Kaunas */}
-                    <MapPin size={16} fill="#FF5533" color="#FFFFFF" />
+                    <MapPin size={16} fill="#14532d" color="#dcfce7" />
                 </Annotation>
 
                 <Annotation
-                    subject={[2.8214, 41.9794]} // Girona coordinates
+                    subject={[2.15899, 42.6]} // Girona coordinates (corrected)
                     dx={0}
                     dy={0}
                 >
                     {/* Map pin for Girona */}
-                    <MapPin size={16} fill="#FF5533" color="#FFFFFF" />
+                    <MapPin size={16} fill="#14532d" color="#dcfce7" />
                 </Annotation>
 
                 <Annotation
-                    subject={[14.4422, 45.3271]} // Rijeka coordinates
+                    subject={[13.9926, 45.9871]} // Rijeka coordinates (adjusted more up and left)
                     dx={0}
                     dy={0}
                 >
                     {/* Map pin for Rijeka */}
-                    <MapPin size={16} fill="#FF5533" color="#FFFFFF" />
+                    <MapPin size={16} fill="#14532d" color="#dcfce7" />
                 </Annotation>
             </ComposableMap>
         </div>

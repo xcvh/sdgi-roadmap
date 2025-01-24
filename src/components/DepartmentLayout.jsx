@@ -14,11 +14,25 @@ const DepartmentLayout = ({
   pdfLink 
 }) => {
   return (
-    <div className="department-container p-6">
+    <div className="department-container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div className="mb-8">
-        <h2 className="text-xl text-gray-600 mb-2">{universityName}</h2>
-        <h3 className="text-2xl font-semibold mb-2">{departmentName}</h3>
-        <h1 className="text-3xl font-bold">{title}</h1>
+        <div>
+          <h2 className="text-xl text-neutral-600 mb-2">{universityName}</h2>
+          <h3 className="text-2xl font-semibold mb-2">{departmentName}</h3>
+          <div className="lg:flex lg:items-center lg:justify-between">
+            <h1 className="text-3xl font-bold">{title}</h1>
+            <div className="mt-4 lg:mt-0 lg:ml-4">
+              <a 
+                href={pdfLink}
+                className="inline-block bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Download Roadmap PDF
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
       
       <TeamSection members={teamMembers} />
@@ -26,17 +40,6 @@ const DepartmentLayout = ({
       <RoadmapOverview overview={roadmapOverview} />
       
       <MeasuresSection measures={measures} />
-      
-      <div className="mt-8">
-        <a 
-          href={pdfLink}
-          className="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Download Roadmap PDF
-        </a>
-      </div>
     </div>
   );
 };

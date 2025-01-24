@@ -107,7 +107,7 @@ Timeframe for implementation: 12 months from March 2025 till March 2026.`,
      "timeFrame": "March 2025 - March 2026"
    }
  ],
-        pdfLink: "/path/to/croatia-roadmap.pdf"
+        pdfLink: "./pdfs/SDG-iLevel_WP6_6M UNIRi Departamental Roadmap_Final_21 Jan 2025.pdf"
     };
 
     return <DepartmentLayout {...departmentData} />;
