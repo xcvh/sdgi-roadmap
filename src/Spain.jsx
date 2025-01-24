@@ -3,33 +3,111 @@ import DepartmentLayout from './components/DepartmentLayout';
 
 const Spain = () => {
   const departmentData = {
-    title: "Spain Department Roadmap",
+    title: "Universitat de Girona Sustainability Roadmap",
+    universityName: "Universitat de Girona",
+    departmentName: "Subject-Specific Education Department, The Faculty of Education and Psychology, Josep Pallach Institute of Education Sciences",
     teamMembers: [
       {
-        name: "Dr. Maria Garcia",
-        title: "Lead Researcher",
-        position: "Department Head",
-        area: "Sustainable Development Lab",
-        areaLink: "https://example.com/sdlab"
+        name: "Assoc. prof. dr. Sílvia Llach",
+        avatar: "silvia.jpg",
+        title: "Vice-Rector for Territory and Social Commitment",
+        position: "Leadership Team",
+        area: "University Leadership",
+        areaLink: "https://www.udg.edu/en/coneix/govern/Consell-de-Direccio/detall?id=104"
       },
-      // Add more team members as needed
-    ],
-    roadmapOverview: `Our department is committed to advancing sustainable development through innovative research 
-    and practical applications. We focus on creating scalable solutions that address key environmental and social 
-    challenges while promoting economic growth.`,
-    measures: [
       {
-        objective: "Enhance Research Impact",
-        description: "Implement a systematic approach to measure and increase the impact of our research initiatives",
-        indicators: "Citation metrics, industry adoption rates, policy influence",
-        resources: "Research analytics tools, dedicated research staff",
-        reporting: "Quarterly progress reviews with stakeholders",
-        responsiblePersons: "Research Team Leaders",
-        timeFrame: "12 months"
+        name: "Assoc. prof. dr. Montserrat Vilà",
+        avatar: "montserrat.jpg",
+        title: "Dean",
+        position: "Faculty Leadership",
+        area: "Faculty of Education and Psychology",
+        areaLink: "https://www.udg.edu/ca/directori/pagina-personal?IDP=57435"
       },
-      // Add more measures as needed
+      {
+        name: "Assoc. prof. dr. Jordi Cicres",
+        avatar: "jordi.jpg",
+        title: "Head",
+        position: "Department Leadership",
+        area: "Subject-Specific Education Department",
+        areaLink: "https://www.udg.edu/ca/directori/pagina-personal?ID=2001570"
+      },
+      {
+        name: "Assoc. prof. dr. Jaume Ametller",
+        avatar: "jaume.jpg",
+        title: "Director",
+        position: "Institute Leadership",
+        area: "Josep Pallach Institute of Education Sciences",
+        areaLink: "https://www.udg.edu/ca/directori/pagina-personal?ID=2003161"
+      },
+      {
+        name: "Assoc. prof. dr. Jesús Granados Sánchez",
+        avatar: "jesus.jpg",
+        title: "Master Director",
+        position: "Department Member",
+        area: "Subject-Specific Education Department",
+        areaLink: "https://www.udg.edu/ca/directori/pagina-personal?ID=123713"
+      },
+      {
+        name: "Assoc. prof. dr. Ingrid Mulà",
+        avatar: "ingrid.jpg",
+        title: "Associate Professor",
+        position: "Department Member",
+        area: "Subject-Specific Education Department",
+        areaLink: "https://www.udg.edu/ca/directori/pagina-personal?ID=2002125"
+      },
+      {
+        name: "Assoc. prof. dr. Leslie Collazo",
+        avatar: "leslie.jpeg",
+        title: "Associate Professor",
+        position: "Department Member",
+        area: "Subject-Specific Education Department",
+        areaLink: "https://www.udg.edu/ca/directori/pagina-personal?IDP=149562"
+      }
     ],
-    pdfLink: "/path/to/spain-roadmap.pdf"
+    roadmapOverview: `The roadmap contains 4 measures to help academics to embed the sustainable development goals in their work activities. These measures involve different scales of the university and, for this reason, they will be led by the Subject-Specific Education Department (SSED), the Faculty of Education and Psychology (FEP) and the university as a whole (through the Josep Pallach Institute of Education Sciences (ICE-SAID)).`,
+        "measures": [
+          {
+            "title": "Dissertations for the SDGs",
+            "objective": "To include the contribution made to the SDG in each dissertation, at degree and master levels",
+            "description": "Inclusion of the SDGs in the core elements of dissertation contents, with examples of how to justify contributions to specific SDG targets",
+            "indicators": "The increased number of dissertations that include the SDGs",
+            "resources": "Create a new section in dissertation guidelines with SDG inclusion guidance and update assessment rubrics",
+            "reporting": "Publication of main SDG contributions annually on master and degree websites",
+            "responsiblePersons": "Dr. Jesús Granados Sánchez, Faculty of Education and Psychology (FEP)",
+            "timeFrame": "March 2025 - June 2025 (pilot at Master in Secondary Teacher Education)"
+          },
+          {
+            "title": "Best SDG-Related Dissertation Award",
+            "objective": "To create an annual award for the best contribution made to the SDGs in a final master or degree dissertation",
+            "description": "Develop award criteria, create a selection commission, and recognize top SDG-related dissertations",
+            "indicators": "Increased number of SDG-focused dissertations, quality of contributions, and participation rate",
+            "resources": "Time for professors to evaluate nominations, updated assessment rubrics, and the award prize",
+            "reporting": "Publication of award winners and their contributions on master and degree websites",
+            "responsiblePersons": "Dr. Jesús Granados Sánchez and coordinators from FEP and Subject-Specific Education Department",
+            "timeFrame": "March 2025 - June 2025 (pilot at Master in Secondary Teacher Education)"
+          },
+          {
+            "title": "Training Course on ESD and SDGs",
+            "objective": "Increase the number of academic staff trained in education for sustainability and SDG contributions",
+            "description": "Design a training course using SDG-iLevel project materials, to be included in ICE-SAID training offerings",
+            "indicators": "Course creation, number of course offerings, and percentage of academic staff completing the course",
+            "resources": "Working hours from Innovation Teaching Network coordinators, administrative support",
+            "reporting": "Annual evaluation of training program effectiveness",
+            "responsiblePersons": "Dr. Leslie Collazo, Dr. Jesús Granados Sánchez, with GRECA research group and Green Plan commission involvement",
+            "timeFrame": "March 2025 - March 2026"
+          },
+          {
+            "title": "SDG Contributions in Faculty Newsletter",
+            "objective": "Highlight SDG contributions from academic, administrative staff, and alumni",
+            "description": "Create a monthly newsletter section featuring good practices related to SDGs across teaching, research, management, and community engagement",
+            "indicators": "Creation of newsletter section, inclusion of at least 10 good practices per academic year",
+            "resources": "Administrative work for news editing, description of SDG good practice requirements",
+            "reporting": "Evaluate implementation effectiveness and community impact",
+            "responsiblePersons": "Greening Commission of the Faculty, GRECA research group members",
+            "timeFrame": "June 2025 - March 2026"
+          }
+        ],
+    pdfLink: "/path/to/udg-roadmap.pdf"
   };
 
   return <DepartmentLayout {...departmentData} />;
