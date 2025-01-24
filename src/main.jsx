@@ -6,7 +6,7 @@ import { BrowserRouter } from "react-router";
 
 createRoot(document.getElementById("root")).render(
     <StrictMode>
-        <BrowserRouter basename="/sdgi-roadmap">
+        <BrowserRouter basename={process.env.NODE_ENV === 'production' ? '/sdgi-roadmap' : '/'}>
             <App />
         </BrowserRouter>
     </StrictMode>,

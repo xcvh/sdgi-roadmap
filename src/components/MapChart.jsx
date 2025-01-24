@@ -40,7 +40,7 @@ const MapChart = () => {
                 />
                 <Geographies
                     geography={features}
-                    className="stroke-green-900 stroke-[0.5px]"
+                    className="stroke-green-500 stroke-[0.5px]"
                 >
                     {({ geographies }) =>
                         geographies.map((geo) => {
@@ -85,24 +85,33 @@ const MapChart = () => {
                 >
                     {/* Map pin for Kaunas */}
                     <MapPin size={16} fill="#14532d" color="#dcfce7" />
+                    <text x={-13} y={37} className="fill-green-950 text-xl font-bold">
+                        Kaunas
+                    </text>
                 </Annotation>
 
                 <Annotation
-                    subject={[2.15899, 42.6]} // Girona coordinates (corrected)
+                    subject={[2.15899, 42.6]} // Girona coordinates
                     dx={0}
                     dy={0}
                 >
                     {/* Map pin for Girona */}
                     <MapPin size={16} fill="#14532d" color="#dcfce7" />
+                    <text x={15} y={16} className="fill-green-950 text-xl font-bold">
+                        Girona
+                    </text>
                 </Annotation>
 
                 <Annotation
-                    subject={[13.9926, 45.9871]} // Rijeka coordinates (adjusted more up and left)
+                    subject={[13.9926, 45.9871]} // Rijeka coordinates
                     dx={0}
                     dy={0}
                 >
                     {/* Map pin for Rijeka */}
                     <MapPin size={16} fill="#14532d" color="#dcfce7" />
+                    <text x={-14} y={-2} className="fill-green-950 text-xl font-bold">
+                        Rijeka
+                    </text>
                 </Annotation>
             </ComposableMap>
         </div>
