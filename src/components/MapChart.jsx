@@ -85,4 +85,4 @@ const MapChart = () => {
     );
 };
 
-export default MapChart;
+export default MapChart; 

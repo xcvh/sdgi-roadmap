@@ -3,7 +3,7 @@ import Spain from "./Spain.jsx";
 import Croatia from "./Croatia.jsx";
 import Lithuania from "./Lithuania.jsx";
 import Article from "./Article";
-import Navigation from "./Navigation";
+import Navigation from "./components/Navigation";
 
 export default function App() {
     return (
