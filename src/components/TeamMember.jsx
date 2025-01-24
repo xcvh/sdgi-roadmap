@@ -6,7 +6,7 @@ const TeamMember = ({ name, title, position, area, areaLink, avatar }) => {
     <div className="team-member p-4 flex items-start gap-4">
       {avatar && (
         <img 
-          src={`./people/${avatar}`}
+          src={`${avatar}`}
           alt={`${name}'s avatar`}
           className="size-20 rounded-full object-cover"
         />

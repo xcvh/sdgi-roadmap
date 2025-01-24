@@ -1,6 +1,7 @@
 import React from "react";
 import { MapPin } from "lucide-react";
 import { useNavigate } from "react-router";
+import features from "../../public/features.json";
 
 import {
     ComposableMap,
@@ -9,7 +10,6 @@ import {
     Annotation,
 } from "react-simple-maps";
 import { PatternLines } from "@vx/pattern";
-import { useEffect } from "react";
 const highlighted = ["LTU", "ESP", "HRV"];
 
 const countryRoutes = {
@@ -39,7 +39,7 @@ const MapChart = () => {
                     className="stroke-1 stroke-green-900 bg-green-100"
                 />
                 <Geographies
-                    geography="/features.json"
+                    geography={features}
                     className="stroke-green-900 stroke-[0.5px]"
                 >
                     {({ geographies }) =>
