@@ -1,5 +1,10 @@
 import React from 'react';
 import DepartmentLayout from './components/DepartmentLayout';
+import asta from "../public/people/asta.jpeg";
+import vaida from "../public/people/vaida.jpg";
+import jurgita from "../public/people/jurgita.jpg";
+import egle from "../public/people/egle.jpeg";
+import zivile from "../public/people/zivile.jpg";
 
 const Lithuania = () => {
   const departmentData = {
@@ -9,7 +14,7 @@ const Lithuania = () => {
     teamMembers: [
       {
         name: "Assoc. prof. dr. Asta Daunorienė",
-        avatar: "asta.jpeg",
+        avatar: asta,
         title: "Head of Center",
         position: "Head of Center",
         area: "EDU_Lab Center for Excellence in Teaching and Learning",
@@ -17,7 +22,7 @@ const Lithuania = () => {
       },
       {
         name: "Assoc. prof. dr. Vaida Jonaitienė",
-        avatar: "vaida.jpg",
+        avatar: vaida,
         title: "Coordinator",
         position: "Coordinator",
         area: "EDU_Lab Center",
@@ -25,7 +30,7 @@ const Lithuania = () => {
       },
       {
         name: "Assoc. prof. dr. Jurgita Barynienė",
-        avatar: "jurgita.jpg",
+        avatar: jurgita,
         title: "Project Manager",
         position: "Project Manager for Academic Competence Development",
         area: "EDU_Lab Center for Excellence in Teaching and Learning",
@@ -33,7 +38,7 @@ const Lithuania = () => {
       },
       {
         name: "Prof. dr. Eglė Staniškienė",
-        avatar: "egle.jpeg",
+        avatar: egle,
         title: "Research Group Member",
         position: "Researcher",
         area: "Sustainable Development Research Group, School of Economics and Business",
@@ -41,7 +46,7 @@ const Lithuania = () => {
       },
       {
         name: "Prof. dr. Živilė Stankevičiūtė",
-        avatar: "zivile.jpg",
+        avatar: zivile,
         title: "Research Group Member", 
         position: "Researcher",
         area: "Sustainable Development Research Group, School of Economics and Business",
