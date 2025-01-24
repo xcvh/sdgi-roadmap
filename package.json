@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://xcvh.github.io/sdgi-roadmap",
+  "homepage": "https://jel.do/sdgi-roadmap",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
