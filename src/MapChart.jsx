@@ -6,7 +6,6 @@ import {
     Geographies,
     Geography,
     Annotation,
-    ZoomableGroup,
 } from "react-simple-maps";
 import { PatternLines } from "@vx/pattern";
 

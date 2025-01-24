@@ -2,13 +2,13 @@ import React from "react";
 
 const Article = () => {
     return (
-        <div className="" id="sdg-roadmaps">
-            <h1 className="text-2xl font-bold underline">
+        <div className="prose" id="sdg-roadmaps">
+            <h1 className="">
                 Transforming Sustainable Development: Introducing the SDGiLevel
                 Departmental Roadmaps
             </h1>
 
-            <h2 className="text-xl font-bold font-mono">
+            <h2 className="">
                 Unveiling the Institutional Capacity Phase Roadmaps
             </h2>
 
@@ -21,9 +21,7 @@ const Article = () => {
                 Development Goals (SDGs).
             </p>
 
-            <h3 className="text-lg font-bold">
-                What Are the SDGiLevel Departmental Roadmaps?
-            </h3>
+            <h3 className="">What Are the SDGiLevel Departmental Roadmaps?</h3>
 
             <p className="">
                 The SDGiLevel Departmental Roadmaps are strategic plans tailored
@@ -74,7 +72,7 @@ const Article = () => {
                 <li className="">
                     <strong className="">
                         For University Leaders and Stakeholders:
-                    </strong>{" "}
+                    </strong>
                     The SDGiLevel Departmental Roadmaps serve as innovative
                     models for SDG contribution, capturing the interest of
                     university leaders and higher education experts. Their
