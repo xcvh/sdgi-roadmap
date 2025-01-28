@@ -14,7 +14,7 @@ const Lithuania = () => {
     teamMembers: [
       {
         name: "Assoc. prof. dr. Asta Daunorienė",
-        avatar: asta,
+        avatar: "/people/asta.jpeg",
         title: "Head of Center",
         position: "Head of Center",
         area: "EDU_Lab Center for Excellence in Teaching and Learning",
@@ -22,7 +22,7 @@ const Lithuania = () => {
       },
       {
         name: "Assoc. prof. dr. Vaida Jonaitienė",
-        avatar: vaida,
+        avatar: "/people/vaida.jpg",
         title: "Coordinator",
         position: "Coordinator",
         area: "EDU_Lab Center",
@@ -30,7 +30,7 @@ const Lithuania = () => {
       },
       {
         name: "Assoc. prof. dr. Jurgita Barynienė",
-        avatar: jurgita,
+        avatar: "/people/jurgita.jpg",
         title: "Project Manager",
         position: "Project Manager for Academic Competence Development",
         area: "EDU_Lab Center for Excellence in Teaching and Learning",
@@ -38,7 +38,7 @@ const Lithuania = () => {
       },
       {
         name: "Prof. dr. Eglė Staniškienė",
-        avatar: egle,
+        avatar: "/people/egle.jpeg",
         title: "Research Group Member",
         position: "Researcher",
         area: "Sustainable Development Research Group, School of Economics and Business",
@@ -46,8 +46,8 @@ const Lithuania = () => {
       },
       {
         name: "Prof. dr. Živilė Stankevičiūtė",
-        avatar: zivile,
-        title: "Research Group Member", 
+        avatar: "/people/zivile.jpg",
+        title: "Research Group Member",
         position: "Researcher",
         area: "Sustainable Development Research Group, School of Economics and Business",
         areaLink: "https://en.ktu.edu/scientist/zivile.stankeviciute/"

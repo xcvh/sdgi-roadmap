@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "react-router";
+import sdgLogo from "/SDG-Logo.png";
 
 const navigation = [
     { name: "Home", href: "/" },
@@ -14,7 +15,7 @@ function classNames(...classes) {
 
 const Navigation = () => {
     const location = useLocation();
-    
+
     return (
         <nav className="sticky top-0 z-50 bg-green-900 mb-8">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -23,7 +24,7 @@ const Navigation = () => {
                         <div className="shrink-0">
                             <img
                                 alt="SDG iLevel"
-                                src="./SDG-Logo.png"
+                                src={sdgLogo}
                                 className="size-14 rounded-md bg-green-100 p-1"
                             />
                         </div>
