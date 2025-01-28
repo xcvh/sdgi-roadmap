@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router";
+import { Routes, Route } from "react-router-dom";
 import Spain from "./Spain.jsx";
 import Croatia from "./Croatia.jsx";
 import Lithuania from "./Lithuania.jsx";
