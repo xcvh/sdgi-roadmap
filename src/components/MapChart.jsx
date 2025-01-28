@@ -1,7 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { MapPin } from "lucide-react";
 import { useNavigate } from "react-router";
-import features from "../../public/features.json";
 
 import {
     ComposableMap,
@@ -20,6 +19,18 @@ const countryRoutes = {
 
 const MapChart = () => {
     const navigate = useNavigate();
+    const [features, setFeatures] = useState(null);
+
+    useEffect(() => {
+        fetch('/features.json')
+            .then(response => response.json())
+            .then(data => setFeatures(data))
+            .catch(error => console.error('Error loading map data:', error));
+    }, []);
+
+    if (!features) {
+        return <div>Loading map...</div>;
+    }
 
     return (
         <div className="border border-b-2 border-green-600 rounded-3xl overflow-hidden">

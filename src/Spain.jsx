@@ -1,12 +1,12 @@
 import React from 'react';
 import DepartmentLayout from './components/DepartmentLayout';
-import silvia from "../public/people/silvia.jpg";
-import montserrat from "../public/people/montserrat.jpg";
-import jordi from "../public/people/jordi.jpg";
-import jaume from "../public/people/jaume.jpg";
-import jesus from "../public/people/jesus.jpg";
-import ingrid from "../public/people/ingrid.jpg";
-import leslie from "../public/people/leslie.jpeg";
+const silvia = "/people/silvia.jpg";
+const montserrat = "/people/montserrat.jpg";
+const jordi = "/people/jordi.jpg";
+const jaume = "/people/jaume.jpg";
+const jesus = "/people/jesus.jpg";
+const ingrid = "/people/ingrid.jpg";
+const leslie = "/people/leslie.jpeg";
 
 const Spain = () => {
   const departmentData = {
@@ -16,7 +16,7 @@ const Spain = () => {
     teamMembers: [
       {
         name: "Assoc. prof. dr. Sílvia Llach",
-        avatar: "/people/silvia.jpg",
+        avatar: silvia,
         title: "Vice-Rector for Territory and Social Commitment",
         position: "Leadership Team",
         area: "University Leadership",
@@ -24,7 +24,7 @@ const Spain = () => {
       },
       {
         name: "Assoc. prof. dr. Montserrat Vilà",
-        avatar: "/people/montserrat.jpg",
+        avatar: montserrat,
         title: "Dean",
         position: "Faculty Leadership",
         area: "Faculty of Education and Psychology",
@@ -32,7 +32,7 @@ const Spain = () => {
       },
       {
         name: "Assoc. prof. dr. Jordi Cicres",
-        avatar: "/people/jordi.jpg",
+        avatar: jordi,
         title: "Head",
         position: "Department Leadership",
         area: "Subject-Specific Education Department",
@@ -40,7 +40,7 @@ const Spain = () => {
       },
       {
         name: "Assoc. prof. dr. Jaume Ametller",
-        avatar: "/people/jaume.jpg",
+        avatar: jaume,
         title: "Director",
         position: "Institute Leadership",
         area: "Josep Pallach Institute of Education Sciences",
@@ -48,7 +48,7 @@ const Spain = () => {
       },
       {
         name: "Assoc. prof. dr. Jesús Granados Sánchez",
-        avatar: "/people/jesus.jpg",
+        avatar: jesus,
         title: "Master Director",
         position: "Department Member",
         area: "Subject-Specific Education Department",
@@ -56,7 +56,7 @@ const Spain = () => {
       },
       {
         name: "Assoc. prof. dr. Ingrid Mulà",
-        avatar: "/people/ingrid.jpg",
+        avatar: ingrid,
         title: "Associate Professor",
         position: "Department Member",
         area: "Subject-Specific Education Department",
@@ -64,7 +64,7 @@ const Spain = () => {
       },
       {
         name: "Assoc. prof. dr. Leslie Collazo",
-        avatar: "/people/leslie.jpeg",
+        avatar: leslie,
         title: "Associate Professor",
         position: "Department Member",
         area: "Subject-Specific Education Department",

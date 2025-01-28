@@ -1,9 +1,9 @@
 import React from 'react';
 import DepartmentLayout from './components/DepartmentLayout';
-import bojana from "../public/people/bojana.jpg";
-import nena_roncevic from "../public/people/nena_roncevic.jpg";
-import nena_vukelic from "../public/people/nena_vukelic.jpeg";
-import iva from "../public/people/iva.jpeg";
+const bojana = "/people/bojana.jpg";
+const nena_roncevic = "/people/nena_roncevic.jpg";
+const nena_vukelic = "/people/nena_vukelic.jpeg";
+const iva = "/people/iva.jpeg";
 
 const Croatia = () => {
   const departmentData = {
@@ -13,7 +13,7 @@ const Croatia = () => {
     teamMembers: [
       {
         name: "Prof. dr. Bojana Ćulum Ilić",
-        avatar: "/people/bojana.jpg",
+        avatar: bojana,
         title: "Full Professor",
         position: "Head of PhD Study Programme",
         area: "Department of Education",
@@ -21,7 +21,7 @@ const Croatia = () => {
       },
       {
         name: "Prof. dr. Nena Rončević",
-        avatar: "/people/nena_roncevic.jpg",
+        avatar: nena_roncevic,
         title: "Full Professor",
         position: "Head of Chair for Special Pedagogies",
         area: "Department of Education",
@@ -29,7 +29,7 @@ const Croatia = () => {
       },
       {
         name: "Asst. prof. dr. Nena Vukelić",
-        avatar: "/people/nena_vukelic.jpeg",
+        avatar: nena_vukelic,
         title: "Assistant Professor",
         position: "Deputy Head of Department & Faculty Board for Quality Assurance",
         area: "Department of Education",
@@ -37,7 +37,7 @@ const Croatia = () => {
       },
       {
         name: "Asst. prof. dr. Iva Bucherber",
-        avatar: "/people/iva.jpeg",
+        avatar: iva,
         title: "Assistant Professor",
         position: "Head of Department",
         area: "Department of Education",
