@@ -22,11 +22,13 @@ const Navigation = () => {
                 <div className="flex h-16 items-center justify-between">
                     <div className="flex items-center">
                         <div className="shrink-0">
+	    <a href='https://www.sdg-ilevel.eu/' target='_blank'>
                             <img
                                 alt="SDG iLevel"
                                 src={sdgLogo}
                                 className="size-14 rounded-md bg-green-100 p-1"
                             />
+	    </a>
                         </div>
                         <div className="hidden md:block">
                             <div className="ml-10 flex items-baseline space-x-4">

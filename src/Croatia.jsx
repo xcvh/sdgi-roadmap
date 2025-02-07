@@ -8,6 +8,7 @@ const iva = "/people/iva.jpeg";
 const Croatia = () => {
   const departmentData = {
     title: "University of Rijeka Department Roadmap",
+    language: "Croatian",
     universityName: "University of Rijeka",
     departmentName: "Department of Education",
     teamMembers: [
@@ -111,7 +112,8 @@ Timeframe for implementation: 12 months from March 2025 till March 2026.`,
         "timeFrame": "March 2025 - March 2026"
       }
     ],
-    pdfLink: "./pdfs/SDG-iLevel_WP6_6M UNIRi Departamental Roadmap_Final_21 Jan 2025.pdf"
+    pdfLink: "./pdfs/SDG-iLevel_WP6_UNIRi Departamental Roadmap_EN.pdf",
+    pdfTranslationLink: "./pdfs/SDG-iLevel_WP6_6M UNIRi Departamental Roadmap_Final_21 Jan 2025.pdf"
   };
 
   return <DepartmentLayout {...departmentData} />;

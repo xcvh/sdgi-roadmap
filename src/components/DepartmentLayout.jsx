@@ -1,4 +1,5 @@
 import React from 'react';
+import { Languages } from 'lucide-react';
 import PropTypes from 'prop-types';
 import TeamSection from './TeamSection';
 import RoadmapOverview from './RoadmapOverview';
@@ -6,12 +7,14 @@ import MeasuresSection from './MeasuresSection';
 
 const DepartmentLayout = ({ 
   title,
+  language,
   universityName,
   departmentName,
   teamMembers,
   roadmapOverview,
   measures,
-  pdfLink 
+  pdfLink, 
+  pdfTranslationLink 
 }) => {
   return (
     <div className="department-container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -24,12 +27,21 @@ const DepartmentLayout = ({
             <div className="mt-4 lg:mt-0 lg:ml-4">
               <a 
                 href={pdfLink}
-                className="inline-block bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700"
+                className="inline-block bg-green-700 text-white px-4 py-2 rounded hover:bg-green-700 mr-2"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Download Roadmap PDF
+                 Download Roadmap (English)
+              </a><a 
+                href={pdfTranslationLink}
+                className="inline-block bg-green-700 text-white px-4 py-2 rounded hover:bg-green-700"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Download Roadmap ({language})
               </a>
+
+
             </div>
           </div>
         </div>

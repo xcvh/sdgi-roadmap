@@ -9,6 +9,7 @@ const zivile = "/people/zivile.jpg";
 const Lithuania = () => {
   const departmentData = {
     title: "Lithuania Department Roadmap",
+    language: "Lithuanian",
     universityName: "Kaunas University of Technology",
     departmentName: "EDU_Lab Center for Excellence in Teaching and Learning",
     teamMembers: [
@@ -100,7 +101,8 @@ Timeframe for implementation: (12 months from 2025 03 01 to 2026 03 01)`,
         timeFrame: "2025 12 01 – 2026 03 01"
       }
     ],
-    pdfLink: "./pdfs/SDG-iLevel_WP6_KTU Departamental Roadmap.pdf"
+    pdfLink: "./pdfs/SDG-iLevel_WP6_KTU Departamental Roadmap_EN.pdf",
+    pdfTranslationLink: "./pdfs/SDG-iLevel_WP6_KTU Departamento planas_LT.pdf"
   };
 
   return <DepartmentLayout {...departmentData} />;

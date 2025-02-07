@@ -11,6 +11,7 @@ const leslie = "/people/leslie.jpeg";
 const Spain = () => {
   const departmentData = {
     title: "Universitat de Girona Sustainability Roadmap",
+    language: "Catalan",
     universityName: "Universitat de Girona",
     departmentName: "Subject-Specific Education Department, The Faculty of Education and Psychology, Josep Pallach Institute of Education Sciences",
     teamMembers: [
@@ -114,7 +115,8 @@ const Spain = () => {
         "timeFrame": "June 2025 - March 2026"
       }
     ],
-    pdfLink: "./pdfs/SDG-iLevel_WP6_ UdG Departmental Roadmap.pdf"
+    pdfLink: "./pdfs/SDG-iLevel_WP6_UdG Departmental Roadmap_EN.pdf",
+    pdfTranslationLink: "./pdfs/SDG-iLevel_WP6_ UdG Departmental Roadmap.pdf"
   };
 
   return <DepartmentLayout {...departmentData} />;

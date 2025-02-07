@@ -5,7 +5,7 @@ const Article = () => {
     return (
             <div className="prose mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <h1>
-                    Transforming Sustainable Development: Introducing the SDGiLevel
+                    Transforming Sustainable Development: Introducing the SDG-iLevel
                     Departmental Roadmaps
                 </h1>
 
@@ -17,17 +17,17 @@ const Article = () => {
 
                 <p>
                     The Institutional Capacity Phase has successfully culminated in
-                    the creation of three pioneering SDGiLevel Departmental Roadmaps
+                    the creation of three pioneering SDG-iLevel Departmental Roadmaps
                     at UdG, UNIRI, and KTU. These comprehensive blueprints are now
                     ready to guide our universities in recognizing, promoting, and
                     generating individual contributions to the Sustainable
                     Development Goals (SDGs).
                 </p>
 
-                <h3>What Are the SDGiLevel Departmental Roadmaps?</h3>
+                <h3>What Are the SDG-iLevel Departmental Roadmaps?</h3>
 
                 <p>
-                    The SDGiLevel Departmental Roadmaps are strategic plans tailored
+                    The SDG-iLevel Departmental Roadmaps are strategic plans tailored
                     to specific academic units such as departments, faculties, and
                     centers for entrepreneurship. Each roadmap outlines a program of
                     actionable measures, setting 4-6 specific goals, and detailing
@@ -58,7 +58,7 @@ const Article = () => {
                 <ul>
                     <li>
                         <strong>For Department Staff:</strong> The new
-                        policies and measures fostered by the SDGiLevel Departmental
+                        policies and measures fostered by the SDG-iLevel Departmental
                         Roadmaps will support and recognize individual SDG
                         contributions. This will promote an employee-centered
                         culture, enhance collaboration, and boost morale and
@@ -76,7 +76,7 @@ const Article = () => {
                         <strong>
                             For University Leaders and Stakeholders:
                         </strong>
-                        The SDGiLevel Departmental Roadmaps serve as innovative
+                        The SDG-iLevel Departmental Roadmaps serve as innovative
                         models for SDG contribution, capturing the interest of
                         university leaders and higher education experts. Their
                         success paves the way for broader institutional adoption and
