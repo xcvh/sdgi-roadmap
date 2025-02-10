@@ -48,7 +48,7 @@ const MapChart = () => {
     }
 
     return (
-        <div className="float-right ml-8 mb-8 w-[500px] border border-b-2 border-sky-600 rounded-3xl overflow-hidden">
+        <div className="w-full md:w-[500px] md:float-right md:ml-8 mb-8 border border-b-2 border-sky-600 rounded-3xl overflow-hidden">
             <ComposableMap
                 projection="geoAzimuthalEqualArea"
                 projectionConfig={{

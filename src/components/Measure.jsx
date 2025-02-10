@@ -21,7 +21,7 @@ const Measure = ({
   timeFrame
 }) => {
   return (
-    <div className="measure p-6 border border-b-2 border-sky-600 rounded-lg mb-6 bg-slate-50">
+    <div className="measure p-6 border border-b-2 border-sky-600 hover:border-yellow-600 rounded-lg bg-slate-50">
       <h2 className="text-2xl font-bold mb-2">{title}</h2>
       <h3 className="text-xl font-bold mb-4">{objective}</h3>
 
