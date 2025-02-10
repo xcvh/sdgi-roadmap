@@ -1,14 +1,13 @@
 import React from "react";
-import MapChart from "./components/MapChart";
+import MapChart from "../components/MapChart";
 
 const Article = () => {
     return (
-            <div className="prose mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <h1>
-                    Transforming Sustainable Development: Introducing the SDG-iLevel
-                    Departmental Roadmaps
-                </h1>
+        <div className="prose mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <h1>Transforming Sustainable Development:<br />
+                Introducing the SDG-iLevel Departmental Roadmaps</h1>
 
+            <div className="relative">
                 <MapChart />
 
                 <h2>
@@ -110,6 +109,7 @@ const Article = () => {
                     leaders in sustainable development.
                 </p>
             </div>
+        </div >
     );
 };
 

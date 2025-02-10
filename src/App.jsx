@@ -1,13 +1,13 @@
 import { Routes, Route } from "react-router-dom";
-import Spain from "./Spain.jsx";
-import Croatia from "./Croatia.jsx";
-import Lithuania from "./Lithuania.jsx";
-import Article from "./Article";
+import Spain from "./pages/Spain.jsx";
+import Croatia from "./pages/Croatia.jsx";
+import Lithuania from "./pages/Lithuania.jsx";
+import Article from "./pages/Article";
 import Navigation from "./components/Navigation";
 
 export default function App() {
     return (
-        <div className="min-h-full bg-neutral-100">
+        <div className="min-h-full bg-slate-50">
             <Navigation />
             <main className="pb-8">
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8">

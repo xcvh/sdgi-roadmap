@@ -4,53 +4,70 @@ import PropTypes from 'prop-types';
 import TeamSection from './TeamSection';
 import RoadmapOverview from './RoadmapOverview';
 import MeasuresSection from './MeasuresSection';
+import DepartmentIntroduction from './DepartmentIntroduction';
+import ReactCountryFlag from 'react-country-flag';
 
-const DepartmentLayout = ({ 
+const DepartmentLayout = ({
   title,
   language,
+  countryCode,
+  countryName,
   universityName,
   departmentName,
   teamMembers,
   roadmapOverview,
   measures,
-  pdfLink, 
-  pdfTranslationLink 
+  pdfLink,
+  pdfTranslationLink,
+  introduction,
+  socialLinks
 }) => {
   return (
     <div className="department-container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div className="mb-8">
         <div>
-          <h2 className="text-xl text-neutral-600 mb-2">{universityName}</h2>
+          <h2 className="text-xl text-slate-600 mb-2">{universityName}</h2>
           <h3 className="text-2xl font-semibold mb-2">{departmentName}</h3>
           <div className="lg:flex lg:items-center lg:justify-between">
             <h1 className="text-3xl font-bold">{title}</h1>
-            <div className="mt-4 lg:mt-0 lg:ml-4">
-              <a 
-                href={pdfLink}
-                className="inline-block bg-green-700 text-white px-4 py-2 rounded hover:bg-green-700 mr-2"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                 Download Roadmap (English)
-              </a><a 
-                href={pdfTranslationLink}
-                className="inline-block bg-green-700 text-white px-4 py-2 rounded hover:bg-green-700"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Download Roadmap ({language})
-              </a>
+            <div className="mt-4 lg:mt-0 lg:ml-4 flex flex-col -translate-y-4">
+              <p className="text-sm text-slate-600 mb-2 text-center">Download Roadmap</p>
+              <div className="flex gap-2">
+                <a
+                  href={pdfLink}
+                  className="flex items-center gap-2 px-4 py-2 rounded-lg border border-sky-700 text-sky-700 hover:bg-sky-700 hover:text-white transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <ReactCountryFlag countryCode="GB" svg />
+                  <span className="font-medium">English</span>
+                </a>
+                <a
+                  href={pdfTranslationLink}
+                  className="flex items-center gap-2 px-4 py-2 rounded-lg border border-sky-700 text-sky-700 hover:bg-sky-700 hover:text-white transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
 
-
+                  <ReactCountryFlag countryCode={countryCode} svg />
+                  <span className="font-medium">{language}</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      
+
+      <DepartmentIntroduction
+        introduction={introduction}
+        socialLinks={socialLinks}
+        country={countryName}
+      />
+
       <TeamSection members={teamMembers} />
-      
+
       <RoadmapOverview overview={roadmapOverview} />
-      
+
       <MeasuresSection measures={measures} />
     </div>
   );
@@ -58,12 +75,19 @@ const DepartmentLayout = ({
 
 DepartmentLayout.propTypes = {
   title: PropTypes.string.isRequired,
+  language: PropTypes.string.isRequired,
   universityName: PropTypes.string.isRequired,
   departmentName: PropTypes.string.isRequired,
   teamMembers: PropTypes.arrayOf(PropTypes.object).isRequired,
   roadmapOverview: PropTypes.string.isRequired,
   measures: PropTypes.arrayOf(PropTypes.object).isRequired,
-  pdfLink: PropTypes.string.isRequired
+  pdfLink: PropTypes.string.isRequired,
+  pdfTranslationLink: PropTypes.string.isRequired,
+  introduction: PropTypes.string.isRequired,
+  socialLinks: PropTypes.arrayOf(PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    url: PropTypes.string.isRequired
+  }))
 };
 
 export default DepartmentLayout; 

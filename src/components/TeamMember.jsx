@@ -12,14 +12,14 @@ const TeamMember = ({ name, title, position, area, areaLink, avatar }) => {
         />
       )}
       <div>
-	  <a href={areaLink}
-	  className="hover:underline text-green-700"
-	  target="_blank">
-        <h3 className="text-xl font-semibold">{name}</h3>
-	  </a>
-        <p className="text-neutral-600">{title}</p>
+        <a href={areaLink}
+          className="hover:underline text-sky-700"
+          target="_blank">
+          <h3 className="text-xl font-semibold">{name}</h3>
+        </a>
+        <p className="text-slate-600">{title}</p>
         <p className="">
-            {area}
+          {area}
         </p>
       </div>
     </div>

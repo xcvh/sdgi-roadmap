@@ -1,5 +1,5 @@
 import React from 'react';
-import DepartmentLayout from './components/DepartmentLayout';
+import DepartmentLayout from '../components/DepartmentLayout';
 const silvia = "/people/silvia.jpg";
 const montserrat = "/people/montserrat.jpg";
 const jordi = "/people/jordi.jpg";
@@ -12,8 +12,21 @@ const Spain = () => {
   const departmentData = {
     title: "Universitat de Girona Sustainability Roadmap",
     language: "Catalan",
+    countryCode: "es-ct",
+    countryName: "spain",
     universityName: "Universitat de Girona",
     departmentName: "Subject-Specific Education Department, The Faculty of Education and Psychology, Josep Pallach Institute of Education Sciences",
+    introduction: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+
+At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.`,
+    socialLinks: [
+      {
+        title: "Department Website",
+        url: "https://www.udg.edu/en/ice"
+      }
+    ],
     teamMembers: [
       {
         name: "Assoc. prof. dr. Sílvia Llach",

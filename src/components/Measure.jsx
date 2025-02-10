@@ -21,13 +21,13 @@ const Measure = ({
   timeFrame
 }) => {
   return (
-    <div className="measure p-6 border border-b-2 border-green-600 rounded-lg mb-6 bg-neutral-50">
+    <div className="measure p-6 border border-b-2 border-sky-600 rounded-lg mb-6 bg-slate-50">
       <h2 className="text-2xl font-bold mb-2">{title}</h2>
       <h3 className="text-xl font-bold mb-4">{objective}</h3>
-      
+
       <div className="space-y-4">
         <div>
-          <h4 className="font-semibold text-neutral-700 flex items-center gap-2">
+          <h4 className="font-semibold text-slate-700 flex items-center gap-2">
             <ClipboardList className="h-5 w-5" />
             Description of Actions
           </h4>
@@ -35,7 +35,7 @@ const Measure = ({
         </div>
 
         <div>
-          <h4 className="font-semibold text-neutral-700 flex items-center gap-2">
+          <h4 className="font-semibold text-slate-700 flex items-center gap-2">
             <Target className="h-5 w-5" />
             Indicators of Success
           </h4>
@@ -43,7 +43,7 @@ const Measure = ({
         </div>
 
         <div>
-          <h4 className="font-semibold text-neutral-700 flex items-center gap-2">
+          <h4 className="font-semibold text-slate-700 flex items-center gap-2">
             <Package className="h-5 w-5" />
             Resources Required
           </h4>
@@ -51,7 +51,7 @@ const Measure = ({
         </div>
 
         <div>
-          <h4 className="font-semibold text-neutral-700 flex items-center gap-2">
+          <h4 className="font-semibold text-slate-700 flex items-center gap-2">
             <FileText className="h-5 w-5" />
             Reporting and Review
           </h4>
@@ -59,7 +59,7 @@ const Measure = ({
         </div>
 
         <div>
-          <h4 className="font-semibold text-neutral-700 flex items-center gap-2">
+          <h4 className="font-semibold text-slate-700 flex items-center gap-2">
             <Users className="h-5 w-5" />
             Responsible Person(s)
           </h4>
@@ -67,7 +67,7 @@ const Measure = ({
         </div>
 
         <div>
-          <h4 className="font-semibold text-neutral-700 flex items-center gap-2">
+          <h4 className="font-semibold text-slate-700 flex items-center gap-2">
             <Clock className="h-5 w-5" />
             Time Frame
           </h4>

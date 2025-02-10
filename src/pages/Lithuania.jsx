@@ -1,5 +1,5 @@
 import React from 'react';
-import DepartmentLayout from './components/DepartmentLayout';
+import DepartmentLayout from '../components/DepartmentLayout';
 const asta = "/people/asta.jpeg";
 const vaida = "/people/vaida.jpg";
 const jurgita = "/people/jurgita.jpg";
@@ -10,8 +10,19 @@ const Lithuania = () => {
   const departmentData = {
     title: "Lithuania Department Roadmap",
     language: "Lithuanian",
+    countryCode: "lt",
+    countryName: "lithuania",
     universityName: "Kaunas University of Technology",
     departmentName: "EDU_Lab Center for Excellence in Teaching and Learning",
+    introduction: `The EDU_Lab Centre of Excellence in Learning and Teaching creates an environment that is acknowledged by Kaunas University of Technology and encourages the University's teachers to develop and, together with the changing study environment, change the established teaching practices, search for and implement new study methods that would be in line with the modern student-centred educational trends. EDU_Lab Centre mission is to create opportunities and transfer knowledge for the development and advancement of innovation and evidence-based studies, to develop a student-centred study process and strengthen the culture of quality at the University, in Lithuania and abroad by creating a creative environment that inspires talents and leaders through the continuous improvement of didactic competencies, the integration of innovative teaching methods into the study process, and the creation and nurturing of a motivating environment in which all learners can express their potential.
+
+The EDU_Lab is based on the transfer of knowledge, the support of the academic community, the continuous improvement of the didactic competence of the teachers, and the dissemination of the experience of research-based studies. The EDU_Lab's vision is pursued in line with the University's values and priority areas of activities. The goal of the EDU_Lab is to inspire and accompany teachers on their journey by developing a didactic support system and improving the didactic competencies of the academic community, promoting the dissemination of research-based didactic practices, developing and operating the system of the acknowledgement of teachers' didactic competencies, and designing innovative student teaching/learning strategies.`,
+    socialLinks: [
+      {
+        title: "EDU_Lab Website",
+        url: "https://edulab-en.ktu.edu/"
+      }
+    ],
     teamMembers: [
       {
         name: "Assoc. prof. dr. Asta Daunorienė",
@@ -54,9 +65,9 @@ const Lithuania = () => {
         areaLink: "https://en.ktu.edu/scientist/zivile.stankeviciute/"
       }
     ],
-    roadmapOverview: `The roadmap, led by the EDU_Lab Centre of Excellence in Learning and Teaching, focuses on embedding the Sustainable Development Goals (SDGs) in education. EDU_Lab fosters a culture of innovation at Kaunas University of Technology, encouraging educators to adapt teaching practices, adopt student-centred methods and explore modern approaches to learning. 
+    roadmapOverview: `The roadmap, led by the EDU_Lab Centre of Excellence in Learning and Teaching, focuses on embedding the Sustainable Development Goals (SDGs) in education. EDU_Lab fosters a culture of innovation at Kaunas University of Technology, encouraging educators to adapt teaching practices, adopt student-centred methods and explore modern approaches to learning.
 
-Initiatives include a teacher training programme to strengthen the integration of the SDGs into curricula, a knowledge-sharing platform to streamline access to SDG resources and foster collaboration, targeted training for novice teachers to integrate the SDGs into their teaching practices, and an SDG-focused faculty award to recognise innovative efforts. These actions aim to promote sustainability in education, while fostering institutional collaboration and pedagogical excellence. 
+Initiatives include a teacher training programme to strengthen the integration of the SDGs into curricula, a knowledge-sharing platform to streamline access to SDG resources and foster collaboration, targeted training for novice teachers to integrate the SDGs into their teaching practices, and an SDG-focused faculty award to recognise innovative efforts. These actions aim to promote sustainability in education, while fostering institutional collaboration and pedagogical excellence.
 
 Timeframe for implementation: (12 months from 2025 03 01 to 2026 03 01)`,
     measures: [
