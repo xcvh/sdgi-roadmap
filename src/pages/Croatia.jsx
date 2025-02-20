@@ -1,7 +1,7 @@
 import React from 'react';
 import DepartmentLayout from '../components/DepartmentLayout';
 const bojana = "/people/bojana.jpg";
-const nena_roncevic = "/people/nena_roncevic.jpg";
+const nena_roncevic = "/people/nena_roncevic.jpeg";
 const nena_vukelic = "/people/nena_vukelic.jpeg";
 const iva = "/people/iva.jpeg";
 
@@ -39,7 +39,7 @@ The curriculum across all study programmes emphasizes contemporary educational t
         title: "Full Professor",
         position: "Head of PhD Study Programme",
         area: "Department of Education",
-        areaLink: "https://uniri.hr/en/home/"
+        areaLink: "https://portal.uniri.hr/Portfolio/760"
       },
       {
         name: "Prof. dr. Nena Rončević",
@@ -47,7 +47,7 @@ The curriculum across all study programmes emphasizes contemporary educational t
         title: "Full Professor",
         position: "Head of Chair for Special Pedagogies",
         area: "Department of Education",
-        areaLink: "https://uniri.hr/en/home/"
+        areaLink: "https://portal.uniri.hr/Portfolio/1072"
       },
       {
         name: "Asst. prof. dr. Nena Vukelić",
@@ -55,7 +55,7 @@ The curriculum across all study programmes emphasizes contemporary educational t
         title: "Assistant Professor",
         position: "Deputy Head of Department & Faculty Board for Quality Assurance",
         area: "Department of Education",
-        areaLink: "https://uniri.hr/en/home/"
+        areaLink: "https://portal.uniri.hr/Portfolio/2424"
       },
       {
         name: "Asst. prof. dr. Iva Bucherber",
@@ -63,7 +63,7 @@ The curriculum across all study programmes emphasizes contemporary educational t
         title: "Assistant Professor",
         position: "Head of Department",
         area: "Department of Education",
-        areaLink: "https://uniri.hr/en/home/"
+        areaLink: "https://portal.uniri.hr/Portfolio/2046"
       }
     ],
     roadmapOverview: `The Department of Education at the University of Rijeka is committed to integrating sustainable development goals (SDGs) into its educational programs and practices. Our roadmap outlines strategic initiatives to enhance sustainability awareness, promote innovative teaching methods, and foster collaboration across institutional boundaries. Through targeted measures and continuous assessment, we aim to create lasting impact in educational sustainability.`,
