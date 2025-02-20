@@ -58,7 +58,7 @@ The curriculum across all study programmes emphasizes contemporary educational t
         areaLink: "https://portal.uniri.hr/Portfolio/2424"
       },
       {
-        name: "Asst. prof. dr. Iva Bucherber",
+        name: "Asst. prof. dr. Iva Buchberger",
         avatar: iva,
         title: "Assistant Professor",
         position: "Head of Department",
